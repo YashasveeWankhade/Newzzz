@@ -1,0 +1,107 @@
+/* Navbar */
+.navbar {
+  background-color: rgba(19, 22, 29, 0.934) !important;
+  padding: 15px 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 80px !important;
+}
+
+/* Logo */
+.nav-brand {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important; /* Space between logo and text */
+  color: #ffffff !important; /* Darker gray tone */
+}
+
+/* If 'Your News' is inside a span, target it */
+.nav-brand span {
+  color: #ffffff !important; /* Even darker gray */
+}
+
+.logo {
+  width: 50px !important;
+  height: auto !important;
+  margin-right: 10px !important;
+}
+
+/* Navigation Items */
+.nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.nav-item {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.nav-item:hover {
+  transform: translateY(-2px) !important;
+  text-decoration: underline !important;
+  color: #3172ff !important;
+}
+
+/* Search Bar */
+.search-form {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.form-input {
+  border-radius: 0 !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  padding: 10px 15px !important;
+  font-size: 16px !important;
+  background-color: #2b3a4a !important;
+  color: #000318 !important;
+  border: 1px solid #5a6b7d !important;
+  outline: none !important;
+  width: 220px !important;
+}
+
+.form-input::placeholder {
+  color: #b0bec5 !important;
+}
+
+.form-input:focus {
+  border-color: #4ba3ff !important;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #028ccb !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  padding: 10px 18px !important;
+  font-size: 16px !important;
+  border: none !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.search-btn:hover {
+  background-color: #0072b1 !important;
+  transform: scale(1.05) !important;
+}
+
+.search-btn:disabled {
+  background-color: #005abb !important;
+}
+
+/* Close Button */
+.close-btn {
+  color: #ffffff80 !important;
+  cursor: pointer !important;
+  margin-left: 10px !important;
+  font-size: 18px !important;
+}
