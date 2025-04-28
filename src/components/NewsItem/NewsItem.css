@@ -1,0 +1,120 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Base Card Styling */
+.card {
+    border-radius: 20px !important;
+    background-color: rgb(36, 44, 50) !important;
+    box-shadow: 0px 3px 12px 0px #0000002b !important;
+    color: #d1dbe0 !important;
+    transition: transform 0.8s ease, box-shadow 0.8s ease !important;
+    position: relative;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hover Effects: Scaling & Shadow */
+.card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0px 5px 15px rgba(0, 149, 255, 0.626) !important;
+}
+
+/* Subtle expanding effect (from `.card1:before`) */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background: rgba(15, 126, 205, 0.46);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.card:hover::before {
+    transform: scale(12);
+    opacity: 0.2;
+}
+
+/* Card Image */
+.card-img {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 230px !important;
+}
+
+/* Card Body */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Text Description */
+.card-description {
+    color: #6e7f7faa !important;
+    flex-grow: 1;
+    transition: color 0.3s ease-out;
+}
+
+/* Color Change on Hover (from `.card3:hover`) */
+.card:hover .card-description {
+    color: #ffffff !important;
+}
+
+/* Button Section */
+.card-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Button & Arrow */
+.card-btn {
+    border-radius: 15px !important;
+    font-weight: bold !important;
+    box-shadow: 0px 3px 12px 0px #0000002b !important;
+    color: white !important;
+    border-color: #323762b7 !important;
+    padding: 9px 17px !important;
+    background-color: #005abb !important;
+    transition: 0.5s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Arrow Animation */
+.arrow-icon {
+    fill: #ffffff !important;
+    width: 14px !important;
+    transition: transform 0.5s ease;
+}
+
+.card-btn:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+.card:hover .go-corner {
+    opacity: 1;
+}
+
+
+.card:hover .go-corner-gradient {
+    margin-right: -20px;
+}
+
